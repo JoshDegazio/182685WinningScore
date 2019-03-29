@@ -1,0 +1,15 @@
+﻿<Window x:Class="_182685WinningScore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_182685WinningScore"
+        mc:Ignorable="d"
+        Title="Winning Score" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="Input below should contain 6 integers, all seperated by a 'return'"/>
+        <TextBox x:Name="inpt_Box" AcceptsReturn="True" TextWrapping="WrapWithOverflow" Text="Example Input (minus this line):&#x0a;10 (Apple 3-point shots).&#x0a;3 (Apple 2-point field goals).&#x0a;7 (Apple 1-point free throws).&#x0a;8 (Banana 3-point shots)&#x0a;9 (Banana 2-point field goals)&#x0a;6 (Banana 1-point free throws)"/>
+        <Button Content="Calculate" Click="Button_Click"/>
+        <TextBlock x:Name="outpt_Block" Text="Output will appear here. (A = Apples Win, B = Bananas Win, T = Tie)"/>
+    </StackPanel>
+</Window>
